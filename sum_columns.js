@@ -15,5 +15,13 @@
 // The first element, `6`, is the sum of the third elements of all the arrays.
 
 module.exports = function (input) {
-
+  var returnArr = [];
+  for(var i = 0; i< input[0].length; i++){
+    var colTot = 0;
+    for(var j = 0; j < input.length; j++){
+      colTot += input[j][i];
+    }
+    returnArr.push(colTot);
+  }
+  return [returnArr];
 };
