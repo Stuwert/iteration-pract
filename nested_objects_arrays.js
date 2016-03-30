@@ -6,7 +6,6 @@ function curriculum(data) {
     })
   })
   return newObj;
-
 }
 
 function lessonOccurrences(data) {

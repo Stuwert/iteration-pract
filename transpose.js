@@ -2,14 +2,8 @@
 
 module.exports = function (input) {
   return input.map(function(arr, i){
-    var newArr = [];
-    input.forEach(function(item, j){
-      item.forEach(function(subItem, k){
-        if(k === i){
-          newArr.push(subItem);
-        }
-      })
+    return arr.map(function(set, j){
+      return input[j][i]
     })
-    return newArr;
   })
 };
